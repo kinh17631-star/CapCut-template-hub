@@ -1,71 +1,59 @@
-// 1. 📁 तुम्हारा डेटाबेस 
+// 1. 📁 तुम्हारा असली डेटाबेस (CapCut लिंक्स के साथ)
 const templatesDatabase = [
     {
-        title: "Healing Thailand Trend",
-        image: "https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=500", 
-        embedUrl: "https://www.youtube.com/embed/tgbNymZ7vqY",
-        capcutLink: "https://www.capcut.com/t/example1"
+        title: "Fit a Dil | Slowmo 🤍",
+        image: "https://images.unsplash.com/photo-1518133910546-b6c2fb7d79e3?w=500", 
+        embedUrl: "https://www.youtube.com/embed/tgbNymZ7vqY", 
+        capcutLink: "https://www.capcut.com/tv2/ZSum3d4vD/"
     },
     {
-        title: "Sigma Male Grindset (Phonk)",
-        image: "https://images.unsplash.com/photo-1511367461989-f85a21fda167?w=500", 
-        embedUrl: "https://www.youtube.com/embed/tgbNymZ7vqY",
-        capcutLink: "https://www.capcut.com/t/example2"
-    },
-    {
-        title: "Aesthetic Mirror Selfie",
-        image: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=500", 
-        embedUrl: "https://www.youtube.com/embed/tgbNymZ7vqY",
-        capcutLink: "https://www.capcut.com/t/example3"
-    },
-    {
-        title: "Velocity Smooth Edit",
-        image: "https://images.unsplash.com/photo-1550684848-fac1c5b4e853?w=500", 
-        embedUrl: "https://www.youtube.com/embed/tgbNymZ7vqY",
-        capcutLink: "https://www.capcut.com/t/example4"
-    },
-    {
-        title: "Cinematic Mini Vlog",
+        title: "CINEMATIC",
         image: "https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=500", 
         embedUrl: "https://www.youtube.com/embed/tgbNymZ7vqY",
-        capcutLink: "https://www.capcut.com/t/example5"
+        capcutLink: "https://www.capcut.com/tv2/ZSum3FtGn/"
     },
     {
-        title: "Anime Flash Warning",
-        image: "https://images.unsplash.com/photo-1578632767115-351597cf2477?w=500", 
+        title: "VIP slomo template",
+        image: "https://images.unsplash.com/photo-1541443131876-44b03de101c5?w=500", 
         embedUrl: "https://www.youtube.com/embed/tgbNymZ7vqY",
-        capcutLink: "https://www.capcut.com/t/example6"
+        capcutLink: "https://www.capcut.com/tv2/ZSum3gLfr/"
     },
     {
-        title: "Attitude Status Edit",
-        image: "https://images.unsplash.com/photo-1617398869096-7bbde10af552?w=500", 
+        title: "chuhe the",
+        image: "https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?w=500", 
         embedUrl: "https://www.youtube.com/embed/tgbNymZ7vqY",
-        capcutLink: "https://www.capcut.com/t/example7"
+        capcutLink: "https://www.capcut.com/tv2/ZSum34fXK/"
     },
     {
-        title: "Couple Romantic Beat Sync",
-        image: "https://images.unsplash.com/photo-1518133910546-b6c2fb7d79e3?w=500", 
+        title: "Standard high 🔥",
+        image: "https://images.unsplash.com/photo-1511367461989-f85a21fda167?w=500", 
         embedUrl: "https://www.youtube.com/embed/tgbNymZ7vqY",
-        capcutLink: "https://www.capcut.com/t/example8"
+        capcutLink: "https://www.capcut.com/tv2/ZSum3XqTH/"
     },
     {
-        title: "Neon Glow Effect",
-        image: "https://images.unsplash.com/photo-1550684376-efcbd6e3f031?w=500", 
+        title: "trending video",
+        image: "https://images.unsplash.com/photo-1550684848-fac1c5b4e853?w=500", 
         embedUrl: "https://www.youtube.com/embed/tgbNymZ7vqY",
-        capcutLink: "https://www.capcut.com/t/example9"
+        capcutLink: "https://www.capcut.com/tv2/ZSum3X5EP/"
     },
     {
-        title: "Slow-Mo Drip Drop",
+        title: "Trending iPhone Vdo",
+        image: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=500", 
+        embedUrl: "https://www.youtube.com/embed/tgbNymZ7vqY",
+        capcutLink: "https://www.capcut.com/tv2/ZSum3Q1XG/"
+    },
+    {
+        title: "Slow Motion Template",
         image: "https://images.unsplash.com/photo-1520004434532-668416a08753?w=500", 
         embedUrl: "https://www.youtube.com/embed/tgbNymZ7vqY",
-        capcutLink: "https://www.capcut.com/t/example10"
+        capcutLink: "https://www.capcut.com/tv2/ZSum3gUGR/"
     }
 ];
 
 // 2. 🪄 रिवर्स मैजिक (नीचे डाला हुआ लिंक सबसे ऊपर दिखेगा)
 const reversedTemplates = [...templatesDatabase].reverse();
 
-// 3. ⚙️ ऑटोमैटिक ग्रिड और पॉप-अप जेनरेटर (यह वाला हिस्सा शायद डिलीट हो गया था)
+// 3. ⚙️ ऑटोमैटिक ग्रिड और पॉप-अप जेनरेटर (यह तुम्हारी साइट का इंजन है)
 const gridContainer = document.getElementById('template-grid');
 const modal = document.getElementById('video-modal');
 const iframeContainer = document.getElementById('iframe-container');
@@ -85,15 +73,17 @@ reversedTemplates.forEach((template) => {
         <h3 class="title">${template.title}</h3>
     `;
 
+    // जब कोई कार्ड पर क्लिक करेगा
     card.addEventListener('click', () => {
         iframeContainer.innerHTML = `<iframe src="${template.embedUrl}" allowfullscreen></iframe>`;
-        useTemplateBtn.href = template.capcutLink;
+        useTemplateBtn.href = template.capcutLink; // असली CapCut लिंक बटन में सेट हो जाएगा
         modal.classList.add('active');
     });
 
     gridContainer.appendChild(card);
 });
 
+// पॉप-अप बंद करने का सिस्टम
 closeBtn.addEventListener('click', closeModal);
 window.addEventListener('click', (e) => {
     if (e.target === modal) closeModal();
@@ -101,5 +91,5 @@ window.addEventListener('click', (e) => {
 
 function closeModal() {
     modal.classList.remove('active');
-    iframeContainer.innerHTML = ''; 
+    iframeContainer.innerHTML = ''; // वीडियो को बैकग्राउंड में बजने से रोकने के लिए
 }
