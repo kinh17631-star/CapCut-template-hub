@@ -1,0 +1,1 @@
+# CapCut-template-hub
