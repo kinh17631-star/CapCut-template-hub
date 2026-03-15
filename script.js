@@ -1,8 +1,9 @@
+// 1. 📁 तुम्हारा डेटाबेस 
 const templatesDatabase = [
     {
         title: "Healing Thailand Trend",
         image: "https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=500", 
-        embedUrl: "https://www.youtube.com/embed/tgbNymZ7vqY", // Demo Player
+        embedUrl: "https://www.youtube.com/embed/tgbNymZ7vqY",
         capcutLink: "https://www.capcut.com/t/example1"
     },
     {
@@ -60,3 +61,45 @@ const templatesDatabase = [
         capcutLink: "https://www.capcut.com/t/example10"
     }
 ];
+
+// 2. 🪄 रिवर्स मैजिक (नीचे डाला हुआ लिंक सबसे ऊपर दिखेगा)
+const reversedTemplates = [...templatesDatabase].reverse();
+
+// 3. ⚙️ ऑटोमैटिक ग्रिड और पॉप-अप जेनरेटर (यह वाला हिस्सा शायद डिलीट हो गया था)
+const gridContainer = document.getElementById('template-grid');
+const modal = document.getElementById('video-modal');
+const iframeContainer = document.getElementById('iframe-container');
+const useTemplateBtn = document.getElementById('use-template-btn');
+const closeBtn = document.querySelector('.close-btn');
+
+reversedTemplates.forEach((template) => {
+    const card = document.createElement('div');
+    card.classList.add('card');
+    
+    card.innerHTML = `
+        <div class="thumbnail-box">
+            <span class="trending-badge">🔥 Trending</span>
+            <img src="${template.image}" alt="${template.title}">
+            <div class="play-icon"><i class="fas fa-play"></i></div>
+        </div>
+        <h3 class="title">${template.title}</h3>
+    `;
+
+    card.addEventListener('click', () => {
+        iframeContainer.innerHTML = `<iframe src="${template.embedUrl}" allowfullscreen></iframe>`;
+        useTemplateBtn.href = template.capcutLink;
+        modal.classList.add('active');
+    });
+
+    gridContainer.appendChild(card);
+});
+
+closeBtn.addEventListener('click', closeModal);
+window.addEventListener('click', (e) => {
+    if (e.target === modal) closeModal();
+});
+
+function closeModal() {
+    modal.classList.remove('active');
+    iframeContainer.innerHTML = ''; 
+}
