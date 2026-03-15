@@ -41,4 +41,55 @@ const templatesData = [
     },
     {
         title: "yass karle musafir",
-        image: "
+        image: "https://i.postimg.cc/L8nQF78w/IMG-3106.jpg", 
+        capcutUrl: "https://www.capcut.com/tv2/ZSuujeFNn/"
+    },
+    {
+        title: "MASKARA 🤍",
+        image: "https://i.postimg.cc/yxxc3M5L/IMG-3107.jpg", 
+        capcutUrl: "https://www.capcut.com/tv2/ZSuuj8pRM/"
+    },
+    {
+        title: "BMW edit",
+        image: "https://i.postimg.cc/D0S4wqJp/IMG-3108.jpg", 
+        capcutUrl: "https://www.capcut.com/tv2/ZSuuj3EgR/"
+    },
+    {
+        title: "Main prinada bsabar",
+        image: "https://i.postimg.cc/02mdGsjW/IMG-3109.jpg", 
+        capcutUrl: "https://www.capcut.com/tv2/ZSuujg6KT/"
+    },
+    {
+        title: "Ma Dobara Nhi Milta❤️‍🩹",
+        image: "https://i.postimg.cc/4NCpxSPS/IMG-3110.jpg", 
+        capcutUrl: "https://www.capcut.com/tv2/ZSuujgGfX/"
+    },
+    {
+        title: "cinematic video",
+        image: "https://i.postimg.cc/s28v0M0v/IMG-3111.jpg", 
+        capcutUrl: "https://www.capcut.com/tv2/ZSuuja5P5/"
+    }
+];
+
+const reversedTemplates = [...templatesData].reverse();
+const gridContainer = document.getElementById('template-grid');
+
+reversedTemplates.forEach((template) => {
+    const card = document.createElement('div');
+    card.classList.add('card');
+    
+    card.innerHTML = `
+        <div class="thumbnail-box">
+            <span class="trending-badge">🔥 Trending</span>
+            <img src="${template.image}" alt="${template.title}">
+            <div class="play-icon"><i class="fas fa-play"></i></div>
+        </div>
+        <h3 class="title">${template.title}</h3>
+    `;
+
+    card.addEventListener('click', () => {
+        window.open(template.capcutUrl, '_blank');
+    });
+
+    gridContainer.appendChild(card);
+});
