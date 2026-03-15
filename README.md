@@ -1,24 +1,12 @@
-# 🎬 Trending CapCut Templates Hub 
+# CapCut Viral Template Hub 🎬
 
-Welcome to the **CapCut Viral Hub**! This project is a curated collection of the most viral and trending CapCut templates from Instagram Reels, TikTok, and YouTube Shorts.
+Welcome to my personal collection of trending CapCut templates. I created this hub so you don't have to waste time searching for viral Reel templates on Instagram or Telegram. All working links in one place.
 
-## 🚀 Features
-* **Daily Updates:** New templates added as soon as they hit the trend.
-* **Popup Video Player:** Preview templates directly on the site without redirecting.
-* **1-Click Export:** Click the button and the template opens directly in your CapCut app.
-* **Premium UI/UX:** Clean, minimalistic "Cream & Black" dark aesthetic designed for Gen Z.
-* **Lightweight & Fast:** Built entirely on static HTML/CSS/JS without heavy server loads.
+🌐 **Live Website:** [Click Here to Visit](https://kinh17631-star.github.io/CapCut-template-hub/)
 
-## 📱 How to Use
-1. Browse the grid for the latest trending template.
-2. Click on the thumbnail to watch a live preview of the video.
-3. Click **"Use Template in CapCut 🚀"**.
-4. Import your photos/videos in the CapCut App and export your viral Reel!
+Just find the trend you like, check the video preview, and click the button to open it directly in your CapCut app. 
 
-## 🛠️ Tech Stack
-* HTML5
-* CSS3 (Responsive Grid, Glassmorphism elements)
-* Vanilla JavaScript (Dynamic Rendering & Array Reversing)
+**Built with:**
+* HTML, CSS, JavaScript
 
----
-*Disclaimer: All template links and preview videos belong to their respective original creators on CapCut. This site simply acts as an aggregator to make finding trends easier.*
+*Note: All template links and preview videos belong to their original creators on CapCut. This is just an aggregator site.*
