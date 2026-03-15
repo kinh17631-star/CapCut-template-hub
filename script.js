@@ -38,28 +38,7 @@ const templatesData = [
         title: "Slow Motion Template",
         image: "https://images.unsplash.com/photo-1520004434532-668416a08753?w=500", 
         capcutUrl: "https://www.capcut.com/tv2/ZSum3gUGR/"
-    }
-];
-
-const reversedTemplates = [...templatesData].reverse();
-const gridContainer = document.getElementById('template-grid');
-
-reversedTemplates.forEach((template) => {
-    const card = document.createElement('div');
-    card.classList.add('card');
-    
-    card.innerHTML = `
-        <div class="thumbnail-box">
-            <span class="trending-badge">🔥 Trending</span>
-            <img src="${template.image}" alt="${template.title}">
-            <div class="play-icon"><i class="fas fa-play"></i></div>
-        </div>
-        <h3 class="title">${template.title}</h3>
-    `;
-
-    card.addEventListener('click', () => {
-        window.open(template.capcutUrl, '_blank');
-    });
-
-    gridContainer.appendChild(card);
-});
+    },
+    {
+        title: "yass karle musafir",
+        image: "
